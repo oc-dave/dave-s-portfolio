@@ -1,0 +1,54 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+.skill-card img {
+  transition: transform 0.3s ease;
+}
+.skill-card img:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  transition: transform 0.3s ease;
+}
+
+.project-card img:hover {
+  transform: scale(1.05);
+}
+
+#toggle-dark-mode {
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Courier New", monospace; /* Monospace font */
+  border-radius: 9999px; /* Fully rounded corners */
+}
+
+/* Light Mode Styles */
+body {
+  background: linear-gradient(to right, #1067d2, #fbc2eb);
+  color: #000;
+}
+
+.navbar,
+.project-card,
+.skill-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #000;
+}
+
+/* Dark Mode Styles */
+body.dark {
+  background: linear-gradient(to right, #2b1055, #159957, #2b1055);
+  color: #ddd;
+}
+
+body.dark .navbar,
+body.dark .project-card,
+body.dark .skill-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #d3d3d3;
+}
